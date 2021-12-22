@@ -20,8 +20,8 @@ body, html {
 .form-box {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  padding: 40px;
+  margin-top: 20px;
+  padding: 30px;
   max-width: 600px;
   background: #6e3274;
   background: rgb(59,78,101);
@@ -33,7 +33,8 @@ body, html {
 
 .form-box h2 {
   font-family: 'Stick No Bills', sans-serif;
-  padding-top: 2rem;
+  padding-top: .5px;
+  padding-bottom: 3.5rem;
   text-align: center;
   color: white;
   background: linear-gradient(90deg, #000, #f95959, #000);
