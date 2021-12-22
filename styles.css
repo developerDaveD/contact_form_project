@@ -103,6 +103,7 @@ body, html {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden; 
   background-color: #f95959;
+  border-radius: 4px;
   opacity: .9;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
