@@ -1,0 +1,127 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background: rgb(34, 45, 59);
+}
+
+.bg {
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  background-image: url(images/bg_image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: #455d7a;
+  background-blend-mode: darken;
+}
+
+.form-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding: 40px;
+  max-width: 600px;
+  background: #6e3274;
+  background: rgb(59,78,101);
+  background: radial-gradient(circle, rgba(59,78,101,1) 0%, rgba(35,49,66,1) 63%);
+  opacity: .9;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.form-box h2 {
+  font-family: 'Stick No Bills', sans-serif;
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #000, #f95959, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 4s ease-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+.input {
+  font-family: 'Red Hat Mono', monospace;
+  outline-style: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0px;
+  transition: 0.2s;
+}
+
+.input:hover {
+  outline-style: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f95959;
+  border-radius: 0px;
+}
+
+.button {
+  appearance: none;
+  background-color: #e3e3e3;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  outline: 0;
+  padding: 0em 2.2em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden; 
+  background-color: #f95959;
+  opacity: .9;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button span {
+  z-index: 1;
+  position: relative;
+  color: #233142;
+}
+
