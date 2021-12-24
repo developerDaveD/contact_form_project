@@ -1,7 +1,5 @@
-body, html {
-  width: 100%;
-  height: 100%;
-  background: rgb(34, 45, 59);
+body {
+  background-color: #171717;
 }
 
 .bg {
@@ -16,13 +14,12 @@ body, html {
   background-repeat: no-repeat; 
   background-color: #455d7a;
   background-blend-mode: darken;
-}
+} 
 
 .form-box {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  padding: 30px;
+  padding: 15px;
   max-width: 600px;
   background: #6e3274;
   background: rgb(59,78,101);
